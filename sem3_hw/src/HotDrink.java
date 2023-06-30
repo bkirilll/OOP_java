@@ -10,6 +10,7 @@ public class HotDrink extends Drink implements Comparable<HotDrink>{
         return temperature;
     }
 
+
     @Override
     public String toString() {
         return "HotDrink:" +

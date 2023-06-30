@@ -17,6 +17,7 @@ public class HotVendingMachine implements VendingMachine, Iterable<HotDrink> {
         return hotDrinksList;
     }
 
+
     @Override
     public void acceptingMoney() {
         System.out.println("Автомат принял деньги");

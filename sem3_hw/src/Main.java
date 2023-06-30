@@ -1,7 +1,4 @@
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.ListIterator;
+import java.util.*;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -18,16 +15,10 @@ public class Main {
         while(iterator.hasNext()) {
             System.out.println(iterator.next());
         }
-        LinkedList<HotDrink> hotDrinkList = new LinkedList<>();
-        hotDrinkList.add(coffee);
-        hotDrinkList.add(tea);
-        hotDrinkList.add(chocolate);
-        System.out.println(" ");
+        System.out.println("");
 
-        List<HotDrink> sortedList = hotDrinkList.stream().sorted().collect(Collectors.toList());
-        for (int i = 0; i < sortedList.size(); i++) {
-            System.out.println(sortedList.get(i));
-        }
+        Collections.sort(machine.getHotDrinksList());
+        System.out.println(machine);
 
     }
 
